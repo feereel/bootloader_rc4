@@ -1,5 +1,4 @@
 	BITS 16
-	ORG 0x7с00
 
 _start:
 	jmp init
