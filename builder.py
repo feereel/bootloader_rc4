@@ -24,7 +24,7 @@ def encrypt(text, gamma):
     cipher = [0] * len(text)
     for i in range(len(text)):
         cipher[i] = text[i] ^ next(gamma)
-        cipher[i] = cipher[i].to_bytes()
+        cipher[i] = cipher[i].to_bytes(1, 'big')
     return b''.join(cipher)
 
 
